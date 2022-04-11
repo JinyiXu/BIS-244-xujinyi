@@ -11,7 +11,9 @@ library(tidyverse)
 
 # read the PRESIDENT_precinct_general file 
 
-RESULTS <- read_csv("PRESIDENT_precinct_general.csv") 
+# TAA Failed to follow directions to (a) put in /Data folder and (b)
+# use read_csv to read zip file, not unzip it.
+RESULTS <- read_csv("Data/PRESIDENT_precinct_general.zip") 
 
 # Making candidate and state factor variables
 RESULTS$candidate <- as.factor(RESULTS$candidate)
